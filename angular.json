@@ -23,9 +23,28 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/styles.css",
+              "src/assets/css/vendor.css",
+              "src/assets/css/style.css",
+              "src/assets/css/banner.css",
+              "src/assets/css/breadcrumb.css",
+              "src/assets/css/cart.css",
+              "src/assets/css/checkout.css",
+              "src/assets/css/common.css",
+              "src/assets/css/contact.css",
+              "src/assets/css/faq.css",
+              "src/assets/css/footer.css",
+              "src/assets/css/login.css",
+              "src/assets/css/newsletter.css",
+              "src/assets/css/promotinal-product.css",
+              "src/assets/css/vendor.css",
+              "src/assets/css/wishlist.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendor.js",
+              "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,12 +109,34 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/styles.css",
+              "src/assets/css/vendor.css",
+              "src/assets/css/style.css",
+              "src/assets/css/banner.css",
+              "src/assets/css/breadcrumb.css",
+              "src/assets/css/cart.css",
+              "src/assets/css/checkout.css",
+              "src/assets/css/common.css",
+              "src/assets/css/contact.css",
+              "src/assets/css/faq.css",
+              "src/assets/css/footer.css",
+              "src/assets/css/login.css",
+              "src/assets/css/newsletter.css",
+              "src/assets/css/promotinal-product.css",
+              "src/assets/css/vendor.css",
+              "src/assets/css/wishlist.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendor.js",
+              "src/assets/js/main.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
