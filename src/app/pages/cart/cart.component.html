@@ -1,3 +1,4 @@
+<app-header [cart]="cart"></app-header>
 <mat-card class="max-w-7xl mx-auto" *ngIf="cart.items.length">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 w-full">
         <ng-container matColumnDef="product">
@@ -6,7 +7,7 @@
                 <img src="{{element.product}}" alt="product" class="w-[100px] my-5">
             </td>
             <td mat-footer-cell *matFooterCellDef>
-                <button mat-raised-button routerLink="/home">Continue Shopping</button>
+                <button mat-raised-button routerLink="/store">Continue Shopping</button>
             </td>
         </ng-container>
 
@@ -94,6 +95,6 @@
 <mat-card class="max-w-7xl mx-auto" *ngIf="!cart.items.length">
     <p>
         Your cart is empty.
-        <button mat-raised-button routerLink="">Start Shopping</button>
+        <button mat-raised-button routerLink="/store">Start Shopping</button>
     </p>
 </mat-card>
