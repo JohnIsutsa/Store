@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACjB,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "../../src/assets/scss/wishlist.scss"
+    ],
+    "names": [],
+    "file": "wishlist.css"
+}

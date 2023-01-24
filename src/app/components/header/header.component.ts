@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Cart, CartItem } from 'src/app/models/cart.model';
 import { CartService } from 'src/app/services/cart.service';
 
@@ -24,7 +25,7 @@ export class HeaderComponent {
       .reduce((prev, current) => prev + current, 0)
   }
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService, private router: Router) { }
 
   getTotal(items: Array<CartItem>): number {
     return this.cartService.getTotal(items)
@@ -32,6 +33,10 @@ export class HeaderComponent {
 
   onClearCart() {
     this.cartService.clearCart();
+  }
+
+  goToCart(): void{
+    this.router.navigate(['/cart']);
   }
 
 }

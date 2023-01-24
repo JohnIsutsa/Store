@@ -1,4 +1,5 @@
-
+<app-landing-header></app-landing-header>
+<app-landing-modal></app-landing-modal>
 <div class="featured-collection mt-100 overflow-hidden">
     <div class="collection-tab-inner">
         <div class="container">
@@ -8,7 +9,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-6" *ngFor="let product of products">
-                    <app-product-box [product] = "product"></app-product-box>
+                    <app-landing-product-box [product] = "product"></app-landing-product-box>
                 </div>
             </div>
             <div class="view-all text-center">
@@ -17,3 +18,8 @@
         </div>
     </div>
 </div>
+
+
+<!-- I inserted code here -->
+
+

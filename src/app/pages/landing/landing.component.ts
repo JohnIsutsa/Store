@@ -13,11 +13,12 @@ export class LandingComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-
+    this.getProducts();
   }
 
   getProducts(): void {
     this.products = this.productService.getLandingProducts();
+    console.log(this.products);
   }
 
 }

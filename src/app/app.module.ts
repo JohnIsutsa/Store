@@ -29,6 +29,10 @@ import { StoreService } from './services/store.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product.service';
 import { LandingComponent } from './pages/landing/landing.component';
+import { LandingHeaderComponent } from './pages/landing/components/landing-header/landing-header.component';
+import { LandingModalComponent } from './pages/landing/components/landing-modal/landing-modal.component';
+import { LandingProductBoxComponent } from './pages/landing/components/landing-product-box/landing-product-box.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { LandingComponent } from './pages/landing/landing.component';
     FiltersComponent,
     ProductBoxComponent,
     CartComponent,
-    LandingComponent
+    LandingComponent,
+    LandingHeaderComponent,
+    LandingModalComponent,
+    LandingProductBoxComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
